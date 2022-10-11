@@ -1,11 +1,18 @@
+import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Options from '../Options/Options';
+
 
 
 const Question = ({ quiz, questionHandler }) => {
     // console.log(quiz);
-    const { question, options, id } = quiz;
+    const { question, options, id, correctAnswer } = quiz;
     const handlerOption = (data) => {
         questionHandler(data);
+    }
+
+    const correctHandler = (correctAnswer) => {
+        alert(correctAnswer);
     }
 
     return (
@@ -19,6 +26,7 @@ const Question = ({ quiz, questionHandler }) => {
                     handlerOption={handlerOption}
                 ></Options>)
             }
+            <FontAwesomeIcon onClick={() => correctHandler(correctAnswer)} icon={faEye}></FontAwesomeIcon>
         </div>
     );
 };

@@ -1,18 +1,24 @@
-import React from 'react';
+import Options from '../Options/Options';
 
 
-const Question = ({ quiz }) => {
+const Question = ({ quiz, questionHandler }) => {
     // console.log(quiz);
-    const { question, options } = quiz;
+    const { question, options, id } = quiz;
+    const handlerOption = (data) => {
+        questionHandler(data);
+    }
+
     return (
         <div>
-            <div>
-                <p className='fw-bolder'>{question}</p>
-            </div>
-            <p>{options[0]}</p>
-            <p>{options[1]}</p>
-            <p>{options[2]}</p>
-            <p>{options[3]}</p>
+            <p>Question : {question}</p>
+            {
+                options.map((option, index) => <Options
+                    key={index}
+                    id={id}
+                    option={option}
+                    handlerOption={handlerOption}
+                ></Options>)
+            }
         </div>
     );
 };

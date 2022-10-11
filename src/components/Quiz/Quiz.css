@@ -1,0 +1,14 @@
+.quiz-topics {
+    border: 1px solid lightblue;
+    border-radius: 10px;
+}
+
+.quiz-topics img {
+    height: 250px;
+}
+
+.topic-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

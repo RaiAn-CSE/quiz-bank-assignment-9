@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
-import Orders from './components/Orders/Orders';
+import Statistics from './components/Statistics/Statistics';
 import Main from './layouts/Main';
 
 function App() {
@@ -18,8 +19,12 @@ function App() {
           element: <Home></Home>
         },
         {
-          path: '/orders',
-          element: <Orders></Orders>
+          path: '/statistics',
+          element: <Statistics></Statistics>
+        },
+        {
+          path: '/blog',
+          element: <Blog></Blog>
         }
       ]
     }

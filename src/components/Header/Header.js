@@ -5,8 +5,8 @@ const Header = () => {
     return (
         <nav>
             <Link to='/'>Home</Link>
-            <Link to='/orders'>Orders</Link>
-            <Link to='/about'>About</Link>
+            <Link to='/statistics'>Statistics</Link>
+            <Link to='/blog'>Blog</Link>
         </nav>
     );
 };

@@ -6,7 +6,7 @@ import './Home.css'
 const Home = () => {
     const loadData = useLoaderData();
     const quizTopics = loadData.data;
-    console.log(quizTopics);
+    // console.log(quizTopics);
     return (
         <div className='home-container'>
             <div>

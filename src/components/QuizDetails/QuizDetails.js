@@ -12,9 +12,9 @@ const QuizDetails = () => {
     return (
         <div>
             {
-                allQuiz.map(question => <Question
-                    key={question.id}
-                    question={question}
+                allQuiz.map(quiz => <Question
+                    key={quiz.id}
+                    quiz={quiz}
                 ></Question>)
             }
         </div>

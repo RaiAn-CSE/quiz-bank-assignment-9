@@ -2,8 +2,8 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Quiz from '../Quiz/Quiz';
 import './Home.css'
-import img1 from '../../images/1.jpg'
-import img2 from '../../images/2.jpg'
+import img1 from '../../images/img1.jpg'
+import img2 from '../../images/img2.jpg'
 
 const Home = () => {
     const loadData = useLoaderData();
@@ -42,7 +42,7 @@ const Home = () => {
                 </button>
             </div>
 
-            <div className='quiz-container'>
+            <div className='quiz-container mt-5 mb-5'>
                 {
                     quizTopics.map(quizTopic => <Quiz
                         key={quizTopic.id}

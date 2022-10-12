@@ -1,6 +1,31 @@
 .quiz-container {
+    color: white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin: 0 20px 0 20px;
+    background-color: rgba(55, 55, 177, 0.46);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ------------------------------------------Mobile View Start */
+
+@media screen and (max-width:688px) {
+    .quiz-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+/* --------------------------------------------------------------------iPad View  */
+
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .quiz-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

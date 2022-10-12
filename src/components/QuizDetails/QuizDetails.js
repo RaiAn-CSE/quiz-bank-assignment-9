@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import Question from '../Question/Question';
+
 
 const QuizDetails = () => {
     const quizData = useLoaderData();
@@ -9,15 +11,24 @@ const QuizDetails = () => {
     const allQuiz = quizDetail.questions;
     console.log(allQuiz);
 
+    const Notify = (isCorrect) => {
+        if (isCorrect) {
+            toast("Right Answer")
+        }
+        else {
+            toast("Wrong Answer")
+        }
+    }
+
 
     const questionHandler = (data) => {
         const { selectedOption, id } = data;
         const matchData = allQuiz.find(e => e.id === id)
         if (matchData.correctAnswer === selectedOption) {
-            alert("Right Answer")
+            Notify(true);
         }
         else {
-            alert("Wrong Answer")
+            Notify(false);
         }
     }
 
@@ -30,6 +41,7 @@ const QuizDetails = () => {
                     questionHandler={questionHandler}
                 ></Question>)
             }
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

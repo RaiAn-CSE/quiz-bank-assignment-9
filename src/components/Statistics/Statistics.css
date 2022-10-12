@@ -1,4 +1,28 @@
 .chart {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 20px;
+}
+
+/* ------------------------------------------Mobile View Start */
+
+@media screen and (max-width:800px) {
+    .chart {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+    }
+
+}
+
+
+/* --------------------------------------------------------------------iPad View  */
+
+
+@media only screen and (min-width:800px) and (max-width:992px) {
+    .chart {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+    }
 }

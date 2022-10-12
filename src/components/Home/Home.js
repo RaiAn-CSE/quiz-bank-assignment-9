@@ -8,7 +8,7 @@ import img2 from '../../images/2.jpg'
 const Home = () => {
     const loadData = useLoaderData();
     const quizTopics = loadData.data;
-    // console.log(quizTopics);
+    console.log(quizTopics);
     return (
         <div className='home-container'>
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">

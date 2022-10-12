@@ -23,6 +23,7 @@ const QuizDetails = () => {
 
     const questionHandler = (data) => {
         const { selectedOption, id } = data;
+        console.log(data);
         const matchData = allQuiz.find(e => e.id === id)
         if (matchData.correctAnswer === selectedOption) {
             Notify(true);
@@ -34,6 +35,7 @@ const QuizDetails = () => {
 
     return (
         <div>
+            <h4>Quiz of {quizDetail.name}</h4>
             {
                 allQuiz.map(quiz => <Question
                     key={quiz.id}

@@ -8,7 +8,7 @@ import img2 from '../../images/img2.jpg'
 const Home = () => {
     const loadData = useLoaderData();
     const quizTopics = loadData.data;
-    console.log(quizTopics);
+    // console.log(quizTopics);
     return (
         <div className='home-container'>
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
@@ -21,14 +21,14 @@ const Home = () => {
                         <img src={img1} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-md-block">
                             <h5>Learning Courses Online</h5>
-                            <p>That Quiz is a website featuring multiple-choice, matching, and short-answer tests on a variety of core subjects. Most of its content is math-oriented, with quizzes on arithmetic to calculus, but it also includes tests on science, geography, and four languages.</p>
+                            <p>Online quizzes are a popular form of entertainment for web surfers. Online quizzes are generally free to play and for entertainment purposes only though some online quiz websites offer prizes.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src={img2} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Learning Courses Online</h5>
-                            <p>That Quiz is a website featuring multiple-choice, matching, and short-answer tests on a variety of core subjects. Most of its content is math-oriented, with quizzes on arithmetic to calculus, but it also includes tests on science, geography, and four languages.</p>
+                            <p>Online quizzes are a popular form of entertainment for web surfers. Online quizzes are generally free to play and for entertainment purposes only though some online quiz websites offer prizes.</p>
                         </div>
                     </div>
                 </div>

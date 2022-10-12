@@ -12,7 +12,7 @@ const Quiz = ({ quizTopic }) => {
             <div className='topic-name'>
                 <p>{name}</p>
                 <p>Questions: {total}</p>
-                <Link to={`/quiz/${id}`}><button>Let's Start</button></Link>
+                <Link to={`/quiz/${id}`}><button type="button" className="btn btn-primary">Let's Start</button></Link>
             </div>
         </div>
     );

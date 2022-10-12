@@ -12,3 +12,7 @@
     align-items: center;
     justify-content: space-around;
 }
+
+.topic-name {
+    padding: 5px;
+}

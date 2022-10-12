@@ -27,6 +27,7 @@ const Question = ({ quiz, questionHandler }) => {
                 ></Options>)
             }
             <FontAwesomeIcon onClick={() => correctHandler(correctAnswer)} icon={faEye}></FontAwesomeIcon>
+
         </div>
     );
 };
